@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import earthImg from '../../assets/earth.png';
 
 function AboutSection() {
   return (
@@ -24,7 +25,7 @@ function AboutSection() {
                   Start a Project
                 </Link>
               </div>
-              <img className="effectFade fadeRotateX" src="/assets/images/item/earth.png" alt="" />
+              <img className="effectFade fadeRotateX" src={earthImg} alt="Earth" />
             </div>
           </div>
           <div className="col-xxl-5 col-lg-6">

@@ -10,7 +10,19 @@ function Navbar() {
         </Link>
       </div>
 
-      <div className="header-inner" style={{ maxWidth: 'max-content', paddingRight: '12px', paddingLeft: '24px', display: 'flex', alignItems: 'center' }}>
+      <div className="header-inner" style={{ 
+        maxWidth: 'max-content', 
+        paddingRight: '12px', 
+        paddingLeft: '24px', 
+        paddingTop: '8px',
+        paddingBottom: '8px',
+        display: 'flex', 
+        alignItems: 'center',
+        backgroundColor: '#ffffff',
+        borderRadius: '100px',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
+        border: '1px solid rgba(0, 0, 0, 0.04)'
+      }}>
         <div className="box-navigation">
           <ul className="nav-menu-main">
             <li className="menu-item">

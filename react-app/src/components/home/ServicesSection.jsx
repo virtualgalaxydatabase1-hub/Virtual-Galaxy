@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function ServicesSection() {
   return (
-    <div id="services" className="section-services flat-spacing">
+    <div id="services" className="section-services flat-spacing pb-0" style={{ paddingBottom: '20px' }}>
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xxl-4 col-lg-6">
@@ -96,9 +96,6 @@ function ServicesSection() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="services-image effectFade fadeUp">
-            <img src="/assets/images/section/service-1.jpg" alt="" />
           </div>
         </div>
       </div>

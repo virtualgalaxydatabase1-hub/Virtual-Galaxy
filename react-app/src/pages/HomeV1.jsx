@@ -16,6 +16,8 @@ import PricingSection from '../components/home/PricingSection';
 import FaqsSection from '../components/home/FaqsSection';
 import ContactSection from '../components/home/ContactSection';
 
+import WhyChooseUs from '../components/home/WhyChooseUs';
+
 function HomeV1() {
   return (
     <>
@@ -25,6 +27,7 @@ function HomeV1() {
       
       <div className="box-white">
         <ServicesSection />
+        <WhyChooseUs />
         <WorksSection />
         <ProcessSection />
         <BenefitsSection />

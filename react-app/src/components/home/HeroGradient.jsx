@@ -49,13 +49,13 @@ function HeroGradient() {
               <div className="title-icon">
                 <div className="box"></div>
                 <div className="title-icon-wrap">
-                  <div className="img-1 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-25deg)' }}>
+                  <div className="img-1 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-25deg)' }}>
                     <img src={eAutopsyImg} alt="E-Autopsy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
-                  <div className="img-2 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(15deg)' }}>
+                  <div className="img-2 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(15deg)' }}>
                     <img src={digitalIdentityImg} alt="Digital Identity" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
-                  <div className="img-3 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-10deg)' }}>
+                  <div className="img-3 img-transform-3" style={{ backgroundColor: '#fff', borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', padding: '1px', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-10deg)' }}>
                     <img src={imisImg} alt="IMIS" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
                 </div>

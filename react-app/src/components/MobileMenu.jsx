@@ -20,38 +20,28 @@ function MobileMenu() {
               <ul className="nav-ul-mb" id="mobile-menu">
                 <li>
                   <div className="item">
-                    <div className="has-sub-menu">
-                      <a href="#dropdown-menu-index" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                        aria-expanded="false" aria-controls="dropdown-menu-index">
-                        <span className="text">Home</span>
-                      </a>
-                      <div id="dropdown-menu-index" className="collapse" data-bs-parent="#mobile-menu">
-                        <ul className="sub-nav-menu">
-                          <li><Link to="/" className="sub-nav-link text-white">Home Gradient</Link></li>
-                          <li><Link to="/index-v2" className="sub-nav-link text-white">Home Animated</Link></li>
-                        </ul>
-                      </div>
-                    </div>
+                    <Link to="/" className="mb-menu-link text-display-1">
+                      <span className="text">Home</span>
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className="item">
                     <Link to="/about" className="mb-menu-link text-display-1">
-                      <span className="text">About</span>
+                      <span className="text">About Us</span>
                     </Link>
                   </div>
                 </li>
                 <li>
                   <div className="item">
                     <div className="has-sub-menu">
-                      <a href="#dropdown-menu-1" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                        aria-expanded="false" aria-controls="dropdown-menu-1">
-                        <span className="text">Works</span>
+                      <a href="#dropdown-menu-products" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
+                        aria-expanded="false" aria-controls="dropdown-menu-products">
+                        <span className="text">Products</span>
                       </a>
-                      <div id="dropdown-menu-1" className="collapse" data-bs-parent="#mobile-menu">
+                      <div id="dropdown-menu-products" className="collapse" data-bs-parent="#mobile-menu">
                         <ul className="sub-nav-menu">
-                          <li><Link to="/works" className="sub-nav-link text-white">Works</Link></li>
-                          <li><Link to="/work-single" className="sub-nav-link text-white">Works Single</Link></li>
+                          <li><Link to="#" className="sub-nav-link text-white">Product List</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -60,11 +50,11 @@ function MobileMenu() {
                 <li>
                   <div className="item">
                     <div className="has-sub-menu">
-                      <a href="#dropdown-menu-2" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                        aria-expanded="false" aria-controls="dropdown-menu-2">
+                      <a href="#dropdown-menu-services" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
+                        aria-expanded="false" aria-controls="dropdown-menu-services">
                         <span className="text">Services</span>
                       </a>
-                      <div id="dropdown-menu-2" className="collapse" data-bs-parent="#mobile-menu">
+                      <div id="dropdown-menu-services" className="collapse" data-bs-parent="#mobile-menu">
                         <ul className="sub-nav-menu">
                           <li><Link to="/services" className="sub-nav-link text-white">Services</Link></li>
                           <li><Link to="/service-single" className="sub-nav-link text-white">Services Single</Link></li>
@@ -76,19 +66,45 @@ function MobileMenu() {
                 <li>
                   <div className="item">
                     <div className="has-sub-menu">
-                      <a href="#dropdown-menu-3" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                        aria-expanded="false" aria-controls="dropdown-menu-3">
-                        <span className="text">Blog</span>
+                      <a href="#dropdown-menu-investors" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
+                        aria-expanded="false" aria-controls="dropdown-menu-investors">
+                        <span className="text">Investors Info</span>
                       </a>
-                      <div id="dropdown-menu-3" className="collapse" data-bs-parent="#mobile-menu">
+                      <div id="dropdown-menu-investors" className="collapse" data-bs-parent="#mobile-menu">
                         <ul className="sub-nav-menu">
-                          <li><Link to="/blog-standard" className="sub-nav-link text-white">Blog Standard</Link></li>
-                          <li><Link to="/blog-two-columns" className="sub-nav-link text-white">Blog Grid 2</Link></li>
-                          <li><Link to="/blog-three-columns" className="sub-nav-link text-white">Blog Grid 3</Link></li>
-                          <li><Link to="/blog-single" className="sub-nav-link text-white">Blog Single</Link></li>
+                          <li><Link to="#" className="sub-nav-link text-white">Information</Link></li>
                         </ul>
                       </div>
                     </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="item">
+                    <Link to="#" className="mb-menu-link text-display-1">
+                      <span className="text">IPO</span>
+                    </Link>
+                  </div>
+                </li>
+                <li>
+                  <div className="item">
+                    <div className="has-sub-menu">
+                      <a href="#dropdown-menu-resource" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
+                        aria-expanded="false" aria-controls="dropdown-menu-resource">
+                        <span className="text">Resource</span>
+                      </a>
+                      <div id="dropdown-menu-resource" className="collapse" data-bs-parent="#mobile-menu">
+                        <ul className="sub-nav-menu">
+                          <li><Link to="#" className="sub-nav-link text-white">Resources</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="item">
+                    <Link to="#" className="mb-menu-link text-display-1">
+                      <span className="text">Careers</span>
+                    </Link>
                   </div>
                 </li>
                 <li>

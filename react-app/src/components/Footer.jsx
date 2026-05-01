@@ -44,12 +44,24 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <ul className="footer-links d-flex gap-24 align-items-center">
+          <ul className="footer-links d-flex gap-24 align-items-center flex-wrap justify-content-center">
             <li>
               <Link to="/about" className="fw-semibold link-underline link1">About</Link>
             </li>
             <li>
+              <Link to="#" className="fw-semibold link-underline link1">Products</Link>
+            </li>
+            <li>
               <Link to="/services" className="fw-semibold link-underline link1">Services</Link>
+            </li>
+            <li>
+              <Link to="#" className="fw-semibold link-underline link1">Investor Info</Link>
+            </li>
+            <li>
+              <Link to="#" className="fw-semibold link-underline link1">IPO</Link>
+            </li>
+            <li>
+              <Link to="#" className="fw-semibold link-underline link1">Careers</Link>
             </li>
             <li>
               <Link to="/works" className="fw-semibold link-underline link1">Works</Link>

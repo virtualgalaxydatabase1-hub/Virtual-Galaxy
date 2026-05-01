@@ -99,12 +99,13 @@ function Navbar() {
             <a href="#" className="social-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', backgroundColor: '#ff2d15', color: '#fff', borderRadius: '50%', fontSize: '14px', textDecoration: 'none' }}><i className="icon icon-youtube"></i></a>
           </div>
         </div>
+      </div>
+
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
         <a href="#" className="tf-btn open-mb-menu mobile-menu d-lg-none d-flex">
           <i className="icon icon-grip-lines-solid"></i>
         </a>
       </div>
-
-      <div style={{ flex: 1 }}></div>
     </header>
   );
 }

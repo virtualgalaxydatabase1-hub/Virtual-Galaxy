@@ -10,10 +10,11 @@ function ServicesSection() {
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="col-left">
                 <div className="heading-section mb-48">
-                  <div className="heading-sub fw-semibold effectFade fadeUp">Services</div>
+                  <div className="heading-sub fw-semibold effectFade fadeUp">Why choose us?</div>
                   <div className="heading-title text-gradient-3 effectFade fadeRotateX">End-to-End <br /> AI Services</div>
                 </div>
-                <p className="effectFade fadeUp">We turn ambiguous AI ideas into production features your users trust—combining strategy, design, engineering, and rigorous evaluation.</p>
+                <p className="effectFade fadeUp">Serving Clients With Apt
+                  Solutions Since 1997.</p>
               </div>
             </div>
           </div>
@@ -23,17 +24,17 @@ function ServicesSection() {
                 <div className="accordion-action services-image-btn active-img" data-img="/assets/images/section/service-1.jpg" data-bs-target="#faq-1" role="button"
                   data-bs-toggle="collapse" aria-controls="faq-1" aria-expanded="true">
                   <div className="accordion-title">
-                    AI Strategy <br /> & Mapping
+                    Domain Expertise <br />
                     <div className="text-body-1 num">(01)</div>
                   </div>
                 </div>
                 <div id="faq-1" className="collapse show" data-bs-parent="#accordion-services">
                   <div className="accordion-content">
-                    <div className="text-body-3 text-neutral-300 text">Identify high-ROI use cases and define a realistic, measurable AI roadmap.</div>
+                    <div className="text-body-3 text-neutral-300 text">VGIL has been a pioneer in the ever-evolving technology space in the verticals of Banking & Finance, eGovernance, ERP & DC / DR Solutions.</div>
                     <div className="list-tags">
-                      <a href="#" className="tags-item fw-semibold">Stakeholder discovery</a>
-                      <a href="#" className="tags-item fw-semibold">Value model & KPI definition</a>
-                      <a href="#" className="tags-item fw-semibold">Data readiness assessment</a>
+                      <a href="#" className="tags-item fw-semibold">Pioneers in Technology Innovation</a>
+                      <a href="#" className="tags-item fw-semibold">Reliable & Scalable Systems</a>
+                      <a href="#" className="tags-item fw-semibold">Expertise Across Key Verticals </a>
                     </div>
                   </div>
                 </div>
@@ -42,17 +43,17 @@ function ServicesSection() {
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-2.jpg" data-bs-target="#faq-2" role="button"
                   data-bs-toggle="collapse" aria-controls="faq-2" aria-expanded="false">
                   <div className="accordion-title">
-                    AI UX <br /> & Product Design
+                    Supporting 150+ Firms <br />
                     <div className="text-body-1 num">(02)</div>
                   </div>
                 </div>
                 <div id="faq-2" className="collapse" data-bs-parent="#accordion-services">
                   <div className="accordion-content">
-                    <div className="text-body-3 text-neutral-300 text">Human-centered flows, prompts, and interfaces that build trust and adoption.</div>
+                    <div className="text-body-3 text-neutral-300 text">Support multiple types of organizations, including Bank Branches, Manufacturing Setups, and Business Houses..</div>
                     <div className="list-tags">
-                      <a href="#" className="tags-item fw-semibold">Prototype flows</a>
-                      <a href="#" className="tags-item fw-semibold">Prompt UX patterns</a>
-                      <a href="#" className="tags-item fw-semibold">Usability testing with real users</a>
+                      <a href="#" className="tags-item fw-semibold">Banking Solutions</a>
+                      <a href="#" className="tags-item fw-semibold">Manufacturing Support</a>
+                      <a href="#" className="tags-item fw-semibold">Business-Focused Solutionss</a>
                     </div>
                   </div>
                 </div>
@@ -61,17 +62,17 @@ function ServicesSection() {
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-3.jpg" data-bs-target="#faq-3" role="button"
                   data-bs-toggle="collapse" aria-controls="faq-3" aria-expanded="false">
                   <div className="accordion-title">
-                    LLM / Agent <br /> Development
+                    350+ Strong Team <br />
                     <div className="text-body-1 num">(03)</div>
                   </div>
                 </div>
                 <div id="faq-3" className="collapse" data-bs-parent="#accordion-services">
                   <div className="accordion-content">
-                    <div className="text-body-3 text-neutral-300 text">Domain-specific copilots and agents that plan, execute, and report.</div>
+                    <div className="text-body-3 text-neutral-300 text">Our core strength - our team of dynamic professionals keeps itself constantly upgraded to maintain our edge.</div>
                     <div className="list-tags">
-                      <a href="#" className="tags-item fw-semibold">Multi-step planning</a>
-                      <a href="#" className="tags-item fw-semibold">Function calling & toolchains</a>
-                      <a href="#" className="tags-item fw-semibold">Guardrails and audit trails</a>
+                      <a href="#" className="tags-item fw-semibold">Dynamic & Skilled Team</a>
+                      <a href="#" className="tags-item fw-semibold">Maintaining a Competitive Edge</a>
+                      <a href="#" className="tags-item fw-semibold">Continuously Upgraded Knowledge</a>
                     </div>
                   </div>
                 </div>
@@ -80,17 +81,17 @@ function ServicesSection() {
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-4.jpg" data-bs-target="#faq-4" role="button"
                   data-bs-toggle="collapse" aria-controls="faq-4" aria-expanded="false">
                   <div className="accordion-title">
-                    Data Engineering <br /> & Pipelines
+                    Our Expertise <br />
                     <div className="text-body-1 num">(04)</div>
                   </div>
                 </div>
                 <div id="faq-4" className="collapse" data-bs-parent="#accordion-services">
                   <div className="accordion-content">
-                    <div className="text-body-3 text-neutral-300 text">Reliable data flows from ingestion to features, built for scale and cost control.</div>
+                    <div className="text-body-3 text-neutral-300 text">We build cutting edge technologies for Transaction Automation, Customer Service Delivery, Compliance & Decision Support.</div>
                     <div className="list-tags">
-                      <a href="#" className="tags-item fw-semibold">Data cleaning & chunking</a>
-                      <a href="#" className="tags-item fw-semibold">Hybrid search</a>
-                      <a href="#" className="tags-item fw-semibold">Freshness, citations, and re-ranking</a>
+                      <a href="#" className="tags-item fw-semibold">Automate Transactions Seamlessly</a>
+                      <a href="#" className="tags-item fw-semibold">Intelligent Insights</a>
+                      <a href="#" className="tags-item fw-semibold">Deliver Exceptional Customer Experience</a>
                     </div>
                   </div>
                 </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import vgLogo from '../assets/home/vg-max-opportunity.png';
 
 function Navbar() {
   return (
     <header className="tf-header header2" style={{ display: 'flex', alignItems: 'center', padding: '10px 40px' }}>
       <div style={{ flex: 1 }}>
         <Link to="/" className="logo-site">
-          <img src="/assets/images/logo/logo.svg" alt="Aigocy" />
+          <img src={vgLogo} alt="Virtual Galaxy" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
         </Link>
       </div>
 

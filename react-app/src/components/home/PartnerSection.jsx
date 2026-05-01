@@ -1,4 +1,7 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 import partner1 from '../../assets/Government Projects/gmc_nagpur.png';
 import partner2 from '../../assets/Government Projects/high_court.png';
 import partner3 from '../../assets/Government Projects/igmc_nagpur.png';
@@ -54,54 +57,47 @@ function PartnerSection() {
                 Trusted by 100+ <br /> top-tier brands
               </p>
 
-              <div className="infiniteSlide_tech_main d-grid">
-                <div
-                  className="infiniteSlide infiniteSlide_partner"
-                  data-clone="5"
-                  style={{ display: 'flex', alignItems: 'center' }}
-                >
-                  <img src={partner1} alt="GMC Nagpur" style={logoStyle} />
-                  <img src={partner2} alt="High Court" style={logoStyle} />
-                  <img src={partner3} alt="IGMC Nagpur" style={logoStyle} />
-                  <img src={partner4} alt="MACP Bank" style={logoStyle} />
-                  <img src={partner5} alt="Maharashtra Co Bank" style={logoStyle} />
-                  <img src={partner6} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner7} alt="Maharashtra" style={logoStyle} />
-                  <img src={partner8} alt="Msamb" style={logoStyle} />
-                  <img src={partner9} alt="Mumbai apmc" style={logoStyle} />
-                  <img src={partner10} alt="Nach" style={logoStyle} />
-                  <img src={partner11} alt="Nmmc" style={logoStyle} />
-                  <img src={partner12} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner12} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner13} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner14} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner15} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner16} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner17} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner18} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner19} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner20} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner21} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner22} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner23} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner24} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner25} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner27} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner28} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner29} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner30} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner31} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner32} alt="Maharashtra Labour Bank" style={logoStyle} />
-                  <img src={partner33} alt="Maharashtra Labour Bank" style={logoStyle} />
-                </div>
-              </div>
 
+              <style dangerouslySetInnerHTML={{ __html: `
+                .partner-wrap .swiper-wrapper {
+                  transition-timing-function: linear !important;
+                }
+              `}} />
+              <Swiper
+  modules={[Autoplay]}
+  spaceBetween={30}
+  slidesPerView={5}
+  loop={true}
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+  }}
+  speed={3000}
+  breakpoints={{
+    320: { slidesPerView: 2 },
+    640: { slidesPerView: 3 },
+    1024: { slidesPerView: 5 },
+  }}
+>
+  {[
+  partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8,
+  partner9, partner10, partner11, partner12, partner13, partner14, partner15,
+  partner16, partner17, partner18, partner19, partner20, partner21, partner22,
+  partner23, partner24, partner25, partner26, 
+  partner27, partner28, partner29, partner30,
+  partner31, partner32, partner33
+].map((logo, index) => (
+    <SwiperSlide key={index}>
+      <img src={logo} alt={`partner-${index}`} style={logoStyle} />
+    </SwiperSlide>
+  ))}
+</Swiper>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
 }
 
 export default PartnerSection;

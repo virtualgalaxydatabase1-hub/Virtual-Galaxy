@@ -38,7 +38,7 @@ function HeroAnimated() {
             AI-Driven Agency
           </div>
           <div className="title text-display-2 effectFade fadeRotateX">
-            <span className="title1 fw-semibold text-gradient-1">Your AI Sprint Team</span>
+            <span className="title1 fw-semibold text-gradient-1">Innovation and Digital Solutions</span>
             <br />
             <div className="title2 d-flex gap-20 justify-content-center flex-wrap">
               <span className="fw-semibold text-gradient-1">on Demand</span>

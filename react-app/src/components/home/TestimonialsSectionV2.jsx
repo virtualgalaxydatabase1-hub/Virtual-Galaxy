@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import tes1 from "../../assets/Testimonials-img/testimonial-1.png";
+import tes2 from "../../assets/Testimonials-img/testimonial-2.png";
+import tes3 from "../../assets/Testimonials-img/testimonial-3.png";
+import tes4 from "../../assets/Testimonials-img/testimonial-4.png";
 
 function TestimonialsSectionV2() {
   return (
@@ -82,6 +86,26 @@ function TestimonialsSectionV2() {
                         </div>
                       </div>
                     </div>
+                    <div className="swiper-slide">
+                      <div>
+                        <div className="top-icon d-flex gap-4">
+                          <i className="icon icon-star-solid"></i>
+                          <i className="icon icon-star-solid"></i>
+                          <i className="icon icon-star-solid"></i>
+                          <i className="icon icon-star-solid"></i>
+                          <i className="icon icon-star-solid"></i>
+                        </div>
+                        <div className="text-body-1 text-white desc">
+                          "Virtual Galaxy transformed our legacy systems into a modern powerhouse. Their attention to detail and technical prowess is unmatched."
+                        </div>
+                        <div className="cite mb-0">
+                          <img className="line-left" src="/assets/images/item/line-1.png" alt="" />
+                          <div className="name text-body-3 text-neutral-400 fw-semibold">Sarah Jenkins</div>
+                          <div className="line"></div>
+                          <div className="sub text-body-3 text-neutral-400">CloudScale’s Product Manager</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -91,17 +115,22 @@ function TestimonialsSectionV2() {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <div className="testimonial-image-v2">
-                      <img src="/assets/images/section/tes-1.jpg" alt="" />
+                      <img src={tes1} alt="testimonial 1" />
                     </div>
                   </div>
                   <div className="swiper-slide">
                     <div className="testimonial-image-v2">
-                      <img src="/assets/images/section/tes-2.jpg" alt="" />
+                      <img src={tes2} alt="testimonial 2" />
                     </div>
                   </div>
                   <div className="swiper-slide">
                     <div className="testimonial-image-v2">
-                      <img src="/assets/images/section/tes-3.jpg" alt="" />
+                      <img src={tes3} alt="testimonial 3" />
+                    </div>
+                  </div>
+                  <div className="swiper-slide">
+                    <div className="testimonial-image-v2">
+                      <img src={tes4} alt="testimonial 4" />
                     </div>
                   </div>
                 </div>

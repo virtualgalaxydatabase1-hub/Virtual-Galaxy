@@ -50,7 +50,7 @@ function AboutSection() {
                   </div>
                 </div>
                 <div className="desc fw-semibold text-body-1 mb-0">Employees</div>
-                <div className="counter text-neutral-200">
+                <div className="counter text-neutral-400">
                   <span className="number" data-speed="1500" data-to="400" data-inviewport="yes">10</span><span>+</span>
                 </div>
               </div>
@@ -59,13 +59,13 @@ function AboutSection() {
             <div className="review-box mb-24 d-flex flex-column justify-content-center gap-4">
               <div className="d-flex justify-content-between flex-wrap align-items-end gap-12 border-bottom pb-4 mb-2" style={{ borderColor: 'var(--neutral-300)' }}>
                 <div className="desc fw-semibold text-body-1 mb-0">Happy Clients</div>
-                <div className="counter text-neutral-200">
+                <div className="counter text-neutral-400">
                   <span className="number" data-speed="1500" data-to="180" data-inviewport="yes">180</span><span>+</span>
                 </div>
               </div>
               <div className="d-flex justify-content-between flex-wrap align-items-end gap-12">
                 <div className="desc fw-semibold text-body-1 mb-0">Years in Business</div>
-                <div className="counter text-neutral-200">
+                <div className="counter text-neutral-400">
                   <span className="number" data-speed="1500" data-to="28" data-inviewport="yes">28</span><span>+</span>
                 </div>
               </div>

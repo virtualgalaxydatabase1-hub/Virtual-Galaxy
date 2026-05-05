@@ -39,12 +39,12 @@ import partner33 from '../../assets/National-bank/yavatmal_dcc_bank.jpg';
 
 function PartnerSection() {
   const logoStyle = {
-    height: '60px',
-    width: 'auto',
+    height: '130px',
+    width: '100%',
     objectFit: 'contain',
-    margin: '0 20px',
-    flexShrink: 0,
-    maxWidth: '180px'
+    margin: '0 auto',
+    maxWidth: '280px',
+    display: 'block'
   };
 
   return (
@@ -52,8 +52,8 @@ function PartnerSection() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="partner-wrap">
-              <p className="text-secondary text fw-semibold">
+            <div className="partner-wrap" style={{ alignItems: 'center', justifyContent: 'space-between', gap: '40px' }}>
+              <p className="text-secondary text fw-semibold" style={{ minWidth: '150px', textAlign: 'center' }}>
                 Trusted by 100+ <br /> top-tier brands
               </p>
 
@@ -62,42 +62,45 @@ function PartnerSection() {
                 .partner-wrap .swiper-wrapper {
                   transition-timing-function: linear !important;
                 }
+                .partner-wrap .swiper {
+                  width: 100%;
+                }
               `}} />
               <Swiper
-  modules={[Autoplay]}
-  spaceBetween={30}
-  slidesPerView={5}
-  loop={true}
-  autoplay={{
-    delay: 0,
-    disableOnInteraction: false,
-  }}
-  speed={3000}
-  breakpoints={{
-    320: { slidesPerView: 2 },
-    640: { slidesPerView: 3 },
-    1024: { slidesPerView: 5 },
-  }}
->
-  {[
-  partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8,
-  partner9, partner10, partner11, partner12, partner13, partner14, partner15,
-  partner16, partner17, partner18, partner19, partner20, partner21, partner22,
-  partner23, partner24, partner25, partner26, 
-  partner27, partner28, partner29, partner30,
-  partner31, partner32, partner33
-].map((logo, index) => (
-    <SwiperSlide key={index}>
-      <img src={logo} alt={`partner-${index}`} style={logoStyle} />
-    </SwiperSlide>
-  ))}
-</Swiper>
-              </div>
+                modules={[Autoplay]}
+                spaceBetween={60}
+                slidesPerView={4}
+                loop={true}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                speed={3000}
+                breakpoints={{
+                  320: { slidesPerView: 2, spaceBetween: 30 },
+                  640: { slidesPerView: 3, spaceBetween: 40 },
+                  1024: { slidesPerView: 4, spaceBetween: 60 },
+                }}
+              >
+                {[
+                  partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8,
+                  partner9, partner10, partner11, partner12, partner13, partner14, partner15,
+                  partner16, partner17, partner18, partner19, partner20, partner21, partner22,
+                  partner23, partner24, partner25, partner26, 
+                  partner27, partner28, partner29, partner30,
+                  partner31, partner32, partner33
+                ].map((logo, index) => (
+                  <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img src={logo} alt={`partner-${index}`} style={logoStyle} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default PartnerSection;

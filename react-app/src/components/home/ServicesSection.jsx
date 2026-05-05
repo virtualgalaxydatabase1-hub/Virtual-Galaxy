@@ -22,7 +22,7 @@ function ServicesSection() {
             <div className="accordion-faq_list" id="accordion-services">
               <div className="accordion-faq_item effectFade fadeUp" role="presentation">
                 <div className="accordion-action services-image-btn active-img" data-img="/assets/images/section/service-1.jpg" data-bs-target="#faq-1" role="button"
-                  data-bs-toggle="collapse" aria-controls="faq-1" aria-expanded="true">
+                  aria-controls="faq-1" aria-expanded="true">
                   <div className="accordion-title">
                     Domain Expertise <br />
                     <div className="text-body-1 num">(01)</div>
@@ -41,7 +41,7 @@ function ServicesSection() {
               </div>
               <div className="accordion-faq_item effectFade fadeUp" role="presentation">
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-2.jpg" data-bs-target="#faq-2" role="button"
-                  data-bs-toggle="collapse" aria-controls="faq-2" aria-expanded="false">
+                  aria-controls="faq-2" aria-expanded="false">
                   <div className="accordion-title">
                     Supporting 150+ Firms <br />
                     <div className="text-body-1 num">(02)</div>
@@ -60,7 +60,7 @@ function ServicesSection() {
               </div>
               <div className="accordion-faq_item effectFade fadeUp" role="presentation">
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-3.jpg" data-bs-target="#faq-3" role="button"
-                  data-bs-toggle="collapse" aria-controls="faq-3" aria-expanded="false">
+                  aria-controls="faq-3" aria-expanded="false">
                   <div className="accordion-title">
                     350+ Strong Team <br />
                     <div className="text-body-1 num">(03)</div>
@@ -79,7 +79,7 @@ function ServicesSection() {
               </div>
               <div className="accordion-faq_item effectFade fadeUp" role="presentation">
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-4.jpg" data-bs-target="#faq-4" role="button"
-                  data-bs-toggle="collapse" aria-controls="faq-4" aria-expanded="false">
+                  aria-controls="faq-4" aria-expanded="false">
                   <div className="accordion-title">
                     Our Expertise <br />
                     <div className="text-body-1 num">(04)</div>

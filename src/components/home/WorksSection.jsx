@@ -6,7 +6,7 @@ function WorksSection({ className = "section-featured-works flat-spacing pt-0" }
     <div id="works" className={className} style={{ paddingBottom: '20px' }}>
       <div className="container">
         <div className="heading-section mb-0">
-          <div className="heading-sub fw-semibold mx-auto effectFade fadeUp">Featured Works</div>
+          <div className="heading-sub fw-semibold mx-auto effectFade fadeUp">Our Products</div>
         </div>
         <div className="featured-works-list position-relative">
           <div className="">

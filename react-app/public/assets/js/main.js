@@ -228,17 +228,44 @@
     /* services_btn
     -------------------------------------------------------------------------*/
     var services_btn = () => {
-        $('.services-image-btn').on('click', function(){
-            if(!$(this).hasClass('active-img')) {
-                $('.services-image-btn').removeClass('active-img');
-                $(this).addClass('active-img');
-    
-                const newImg = $(this).data('img');
-                $('.services-image').find('img').css('opacity', 0);
-                setTimeout(() => {
-                  $('.services-image').find('img').attr('src', newImg).css('opacity', 1);
-                }, 200);
+        // Open on Hover
+        $('.accordion-action').on('mouseenter', function(){
+            const $target = $($(this).data('bs-target'));
+            if ($target.length) {
+                const collapseInstance = bootstrap.Collapse.getOrCreateInstance($target[0]);
+                collapseInstance.show();
             }
+
+            // Image switching logic for services section
+            if($(this).hasClass('services-image-btn')) {
+                if(!$(this).hasClass('active-img')) {
+                    $('.services-image-btn').removeClass('active-img');
+                    $(this).addClass('active-img');
+        
+                    const newImg = $(this).data('img');
+                    $('.services-image').find('img').css('opacity', 0);
+                    setTimeout(() => {
+                      $('.services-image').find('img').attr('src', newImg).css('opacity', 1);
+                    }, 200);
+                }
+            }
+        });
+
+        // Close on Mouse Leave the entire item
+        $('.accordion-faq_item').on('mouseleave', function(){
+            const $collapse = $(this).find('.collapse');
+            if ($collapse.length) {
+                const collapseInstance = bootstrap.Collapse.getInstance($collapse[0]);
+                if (collapseInstance) {
+                    collapseInstance.hide();
+                }
+            }
+        });
+
+        // Disable default click toggle
+        $('.accordion-action').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
         });
     };
     // counter

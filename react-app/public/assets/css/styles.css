@@ -9458,13 +9458,15 @@ button.animate-btn::after,
   background: radial-gradient(62.56% 62.56% at 28.14% -10.42%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #18181B;
 }
 .accordion-faq_item .accordion-action.collapsed::before {
-  bottom: 110%;
+  bottom: 0;
+}
+.accordion-faq_item .accordion-action .accordion-title {
+  color: var(--white);
 }
 .accordion-faq_item .accordion-action:not(.collapsed) .accordion-title {
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.02em;
-  color: var(--white);
 }
 @media (max-width: 767px) {
   .accordion-faq_item .accordion-action:not(.collapsed) .accordion-title {

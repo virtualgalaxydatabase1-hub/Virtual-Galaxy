@@ -14,7 +14,7 @@ function ServicesList() {
         <div className="accordion-faq_list gap-32" id="accordion-services">
           <div className="accordion-faq_item style-1 effectFade fadeRotateX" role="presentation">
             <div className="accordion-action" data-bs-target="#faq-1" role="button"
-              data-bs-toggle="collapse" aria-controls="faq-1" aria-expanded="true">
+              aria-controls="faq-1" aria-expanded="true">
               <div className="accordion-title">
                 AI Strategy & Mapping
                 <i className="icon icon-arrow-top-right"></i>
@@ -39,7 +39,7 @@ function ServicesList() {
           </div>
           <div className="accordion-faq_item style-1 effectFade fadeRotateX" role="presentation">
             <div className="accordion-action collapsed" data-bs-target="#faq-2" role="button"
-              data-bs-toggle="collapse" aria-controls="faq-2" aria-expanded="false">
+              aria-controls="faq-2" aria-expanded="false">
               <div className="accordion-title">
                 AI UX & Product Design
                 <i className="icon icon-arrow-top-right"></i>
@@ -64,7 +64,7 @@ function ServicesList() {
           </div>
           <div className="accordion-faq_item style-1 effectFade fadeRotateX" role="presentation">
             <div className="accordion-action collapsed" data-bs-target="#faq-3" role="button"
-              data-bs-toggle="collapse" aria-controls="faq-3" aria-expanded="false">
+              aria-controls="faq-3" aria-expanded="false">
               <div className="accordion-title">
                 LLM / Agent Development
                 <i className="icon icon-arrow-top-right"></i>
@@ -89,7 +89,7 @@ function ServicesList() {
           </div>
           <div className="accordion-faq_item style-1 effectFade fadeRotateX" role="presentation">
             <div className="accordion-action collapsed" data-bs-target="#faq-4" role="button"
-              data-bs-toggle="collapse" aria-controls="faq-4" aria-expanded="false">
+              aria-controls="faq-4" aria-expanded="false">
               <div className="accordion-title">
                 Data Engineering & Pipelines
                 <i className="icon icon-arrow-top-right"></i>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function PricingSection() {
   return (
-    <div id="pricing" className="section-pricing flat-spacing">
+    <div id="pricing" className="section-pricing section-spacing">
       <div className="container">
         <div className="heading-section mb-80">
           <div className="heading-sub fw-semibold effectFade fadeUp">Pricing Plans</div>

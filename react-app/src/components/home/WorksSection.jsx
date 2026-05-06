@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function WorksSection({ className = "section-featured-works flat-spacing pt-0" }) {
+function WorksSection({ className = "section-featured-works section-spacing-grouped" }) {
   return (
-    <div id="works" className={className} style={{ paddingBottom: '20px' }}>
+    <div id="works" className={className}>
       <div className="container">
         <div className="heading-section mb-0">
           <div className="heading-sub fw-semibold mx-auto effectFade fadeUp">Our Products</div>

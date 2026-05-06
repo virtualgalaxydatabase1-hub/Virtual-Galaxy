@@ -2,7 +2,7 @@ import React from 'react';
 
 function FaqsSection() {
   return (
-    <div className="section-faqs flat-spacing pt-0">
+    <div className="section-faqs section-spacing">
       <div className="container">
         <div className="heading-section center mb-64">
           <div className="heading-sub fw-semibold effectFade fadeUp">FAQs</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function WhyChooseUs() {
   return (
-    <div className="section-benefits flat-spacing pt-0">
+    <div className="section-benefits section-spacing-grouped">
         <div className="container">
             <div className="heading-section center mb-70">
                 <div className="heading-sub fw-semibold effectFade fadeUp">Benefits</div>

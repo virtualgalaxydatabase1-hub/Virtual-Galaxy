@@ -2,7 +2,7 @@ import React from 'react';
 
 function FeaturesSection() {
   return (
-    <div className="section-features flat-spacing pt-0">
+    <div className="section-features section-spacing-grouped">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xl-5 col-lg-6">

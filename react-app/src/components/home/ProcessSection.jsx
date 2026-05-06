@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProcessSection() {
   return (
-    <div className="section-process flat-spacing pt-0">
+    <div className="section-process section-spacing-grouped">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">

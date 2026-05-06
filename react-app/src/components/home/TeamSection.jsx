@@ -8,7 +8,7 @@ import logoImage from '../../assets/home/ownwer-img/vg-logo.png';
 
 function TeamSection() {
   return (
-    <div className="section-team flat-spacing">
+    <div className="section-team section-spacing">
       <div className="container">
         <div className="heading-section center mb-64">
           <div className="heading-sub fw-semibold style-1 effectFade fadeUp">Our Founder</div>

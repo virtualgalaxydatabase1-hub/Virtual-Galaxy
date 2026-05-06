@@ -2,7 +2,7 @@ import React from 'react';
 
 function BenefitsSection() {
   return (
-    <div className="section-benefits flat-spacing">
+    <div className="section-benefits section-spacing-grouped">
       <div className="container">
         <div className="row">
           <div className="col-12">

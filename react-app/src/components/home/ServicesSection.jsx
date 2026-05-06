@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function ServicesSection() {
+  const [activeImage, setActiveImage] = useState("/assets/images/section/service-1.jpg");
+  const [isFading, setIsFading] = useState(false);
+
+  // Preload images
+  useEffect(() => {
+    const images = [
+      "/assets/images/section/service-1.jpg",
+      "/assets/images/section/service-2.jpg",
+      "/assets/images/section/service-3.jpg",
+      "/assets/images/section/service-4.jpg"
+    ];
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  const handleMouseEnter = (e) => {
+    const actionBtn = e.currentTarget.querySelector('[data-img]');
+    if (actionBtn) {
+      const newImg = actionBtn.getAttribute('data-img');
+      if (newImg && newImg !== activeImage && !isFading) {
+        setIsFading(true);
+        setTimeout(() => {
+          setActiveImage(newImg);
+          setIsFading(false);
+        }, 200); // Wait for fade out
+      }
+    }
+  };
+
   return (
-    <div id="services" className="section-services flat-spacing pb-0" style={{ paddingBottom: '20px' }}>
+    <div id="services" className="section-services section-spacing-grouped">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xxl-4 col-lg-6">
@@ -13,14 +44,31 @@ function ServicesSection() {
                   <div className="heading-sub fw-semibold effectFade fadeUp">Why choose us?</div>
                   <div className="heading-title text-gradient-3 effectFade fadeRotateX">End-to-End <br /> AI Services</div>
                 </div>
-                <p className="effectFade fadeUp">Serving Clients With Apt
+                <p className="effectFade fadeUp mb-48">Serving Clients With Apt
                   Solutions Since 1997.</p>
+                
+                {/* Dynamic Image Container */}
+                <div className="dynamic-image-container effectFade fadeUp">
+                  <img 
+                    src={activeImage} 
+                    alt="Active Service" 
+                    style={{ 
+                      width: '100%', 
+                      height: 'auto',
+                      opacity: isFading ? 0 : 1, 
+                      transform: isFading ? 'scale(0.98)' : 'scale(1)',
+                      transition: 'opacity 0.2s ease-out, transform 0.2s ease-out',
+                      objectFit: 'cover',
+                      borderRadius: '24px'
+                    }} 
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div className="col-xxl-6 col-lg-6">
             <div className="accordion-faq_list" id="accordion-services">
-              <div className="accordion-faq_item effectFade fadeUp" role="presentation">
+              <div className="accordion-faq_item effectFade fadeUp" role="presentation" onMouseEnter={handleMouseEnter}>
                 <div className="accordion-action services-image-btn active-img" data-img="/assets/images/section/service-1.jpg" data-bs-target="#faq-1" role="button"
                   aria-controls="faq-1" aria-expanded="true">
                   <div className="accordion-title">
@@ -39,7 +87,7 @@ function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <div className="accordion-faq_item effectFade fadeUp" role="presentation">
+              <div className="accordion-faq_item effectFade fadeUp" role="presentation" onMouseEnter={handleMouseEnter}>
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-2.jpg" data-bs-target="#faq-2" role="button"
                   aria-controls="faq-2" aria-expanded="false">
                   <div className="accordion-title">
@@ -58,7 +106,7 @@ function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <div className="accordion-faq_item effectFade fadeUp" role="presentation">
+              <div className="accordion-faq_item effectFade fadeUp" role="presentation" onMouseEnter={handleMouseEnter}>
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-3.jpg" data-bs-target="#faq-3" role="button"
                   aria-controls="faq-3" aria-expanded="false">
                   <div className="accordion-title">
@@ -77,7 +125,7 @@ function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <div className="accordion-faq_item effectFade fadeUp" role="presentation">
+              <div className="accordion-faq_item effectFade fadeUp" role="presentation" onMouseEnter={handleMouseEnter}>
                 <div className="accordion-action services-image-btn collapsed" data-img="/assets/images/section/service-4.jpg" data-bs-target="#faq-4" role="button"
                   aria-controls="faq-4" aria-expanded="false">
                   <div className="accordion-title">

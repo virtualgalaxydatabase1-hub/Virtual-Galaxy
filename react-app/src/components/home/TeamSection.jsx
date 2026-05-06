@@ -18,59 +18,49 @@ function TeamSection() {
         </div>
 
         {/* Precise layout with fixed widths for boxes and gap */}
-        <div className="d-flex justify-content-center align-items-center flex-nowrap" style={{ maxWidth: '1000px', margin: '0 auto', gap: '20px' }}>
-
-          {/* Left Box - Avinash Shende */}
-          <div style={{ flex: '0 0 380px' }}>
-            <div className="team-item h-100 effectFade fadeUp">
-              <div className="image" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '24px', overflow: 'hidden' }}>
-                <img src={team1Image} alt="Avinash Shende" style={{ width: '100%', height: 'auto', display: 'block' }} />
+        <div className="row g-4 align-items-center justify-content-center">
+          {/* Left Team Member */}
+          <div className="col-lg-5 col-md-6 col-12">
+            <div className="team-item effectFade fadeUp">
+              <div className="image mb-4">
+                <img src={team1Image} alt="Avinash Shende" className="img-fluid" />
               </div>
-              <a href="#" className="name h6 fw-semibold">Mr. Avinash Shende</a>
-              <div className="sub text-body-1">Promoter, Chairman, Executive Director & Chief Financial Officer</div>
-              <div className="tf-social justify-content-center">
-                <a href="#" className="social-item">
-                  <i className="icon icon-twitter-x"></i>
-                </a>
-                <a href="#" className="social-item">
-                  <i className="icon icon-linkedin-in"></i>
-                </a>
-                <a href="#" className="social-item">
-                  <i className="icon icon-github"></i>
-                </a>
+              <h4 className="name h5 fw-bold mb-2">Mr. Avinash Shende</h4>
+              <p className="sub text-secondary mb-4" style={{ fontSize: '15px' }}>Promoter, Chairman, Executive Director & Chief Financial Officer</p>
+              <div className="tf-social">
+                {['linkedin-in', 'twitter', 'github'].map((icon, i) => (
+                  <a key={i} href="#" className="social-item">
+                    <i className={`icon icon-${icon}`}></i>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Center Logo - Precise Gap */}
-          <div style={{ flex: '0 0 140px' }} className="d-flex justify-content-center effectFade fadeUp">
+          {/* Center Logo */}
+          <div className="col-lg-2 col-12 d-flex justify-content-center my-4 my-lg-0 effectFade fadeUp">
             <div className="center-logo-wrap">
-              <img src={logoImage} alt="Logo" className="img-fluid" style={{ maxWidth: '200px' }} />
+              <img src={logoImage} alt="Logo" className="img-fluid" style={{ maxWidth: '140px' }} />
             </div>
           </div>
 
-          {/* Right Box - Sachin Pande */}
-          <div style={{ flex: '0 0 380px' }}>
-            <div className="team-item h-100 effectFade fadeUp">
-              <div className="image" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '24px', overflow: 'hidden' }}>
-                <img src={team2Image} alt="Sachin Pande" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          {/* Right Team Member */}
+          <div className="col-lg-5 col-md-6 col-12">
+            <div className="team-item effectFade fadeUp">
+              <div className="image mb-4">
+                <img src={team2Image} alt="Sachin Pande" className="img-fluid" />
               </div>
-              <a href="#" className="name h6 fw-semibold">Mr. Sachin Pande</a>
-              <div className="sub text-body-1">Promoter, Managing Director & Chief Technology Officer</div>
-              <div className="tf-social justify-content-center">
-                <a href="#" className="social-item">
-                  <i className="icon icon-twitter-x"></i>
-                </a>
-                <a href="#" className="social-item">
-                  <i className="icon icon-linkedin-in"></i>
-                </a>
-                <a href="#" className="social-item">
-                  <i className="icon icon-github"></i>
-                </a>
+              <h4 className="name h5 fw-bold mb-2">Mr. Sachin Pande</h4>
+              <p className="sub text-secondary mb-4" style={{ fontSize: '15px' }}>Promoter, Managing Director & Chief Technology Officer</p>
+              <div className="tf-social">
+                {['linkedin-in', 'twitter', 'github'].map((icon, i) => (
+                  <a key={i} href="#" className="social-item">
+                    <i className={`icon icon-${icon}`}></i>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

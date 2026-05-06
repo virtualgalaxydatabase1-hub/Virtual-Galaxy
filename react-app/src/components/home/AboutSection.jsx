@@ -30,42 +30,38 @@ function AboutSection() {
             </div>
           </div>
           <div className="col-xxl-5 col-lg-6">
-            <div className="review-box mb-24">
-              <div className="desc fw-semibold text-body-1">We've provided advanced technology to 5000+ bank branches, manufacturing firms, and businesses for - <br /> transaction automation, customer service, compliance, and decision support.</div>
-              <div className="d-flex justify-content-between flex-wrap align-items-end gap-12">
-                <div>
-                  <div className="d-flex gap-4 text mb-10">
-                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12.6792 18.3019L18.1887 16.9057L20.4906 24L12.6792 18.3019ZM25.3585 9.13208H15.6604L12.6792 0L9.69811 9.13208H0L7.84906 14.7925L4.86792 23.9245L12.717 18.2641L17.5472 14.7925L25.3585 9.13208Z" fill="#219653" />
-                    </svg>
-                    Trustpilot
-                  </div>
-                  <div className="d-flex gap-2">
+            <div className="team-item mb-24" style={{ textAlign: 'left', padding: '30px' }}>
+              <div className="desc fw-semibold text-body-1 mb-4">We've provided advanced technology to 5000+ bank branches, manufacturing firms, and businesses for - <br /> transaction automation, customer service, compliance, and decision support.</div>
+              <div className="d-flex justify-content-between flex-wrap align-items-center gap-12 pt-4 border-top" style={{ borderColor: '#f3f4f6' }}>
+                <div className="review-stats">
+                  <div className="d-flex gap-2 mb-2">
                     {[1, 2, 3, 4, 5].map((item) => (
-                      <svg key={item} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="24" height="24" fill="#3F3F46" />
-                        <path d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z" fill="white" />
+                      <svg key={item} width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#ff2d15" />
                       </svg>
                     ))}
                   </div>
+                  <div className="text-caption fw-bold">Trusted Globally</div>
                 </div>
-                <div className="desc fw-semibold text-body-1 mb-0">Employees</div>
-                <div className="counter text-neutral-400">
-                  <span className="number" data-speed="1500" data-to="400" data-inviewport="yes">10</span><span>+</span>
+                <div className="stats-item">
+                  <div className="desc fw-semibold text-body-2 mb-0">Employees</div>
+                  <div className="counter text-brand h4 fw-bold mb-0">
+                    <span className="number" data-speed="1500" data-to="400" data-inviewport="yes">400</span><span>+</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="review-box mb-24 d-flex flex-column justify-content-center gap-4">
-              <div className="d-flex justify-content-between flex-wrap align-items-end gap-12 border-bottom pb-4 mb-2" style={{ borderColor: 'var(--neutral-300)' }}>
+            <div className="team-item d-flex flex-column justify-content-center gap-4" style={{ textAlign: 'left', padding: '30px' }}>
+              <div className="d-flex justify-content-between align-items-center border-bottom pb-4" style={{ borderColor: '#f3f4f6' }}>
                 <div className="desc fw-semibold text-body-1 mb-0">Happy Clients</div>
-                <div className="counter text-neutral-400">
+                <div className="counter text-brand h4 fw-bold mb-0">
                   <span className="number" data-speed="1500" data-to="180" data-inviewport="yes">180</span><span>+</span>
                 </div>
               </div>
-              <div className="d-flex justify-content-between flex-wrap align-items-end gap-12">
+              <div className="d-flex justify-content-between align-items-center">
                 <div className="desc fw-semibold text-body-1 mb-0">Years in Business</div>
-                <div className="counter text-neutral-400">
+                <div className="counter text-brand h4 fw-bold mb-0">
                   <span className="number" data-speed="1500" data-to="28" data-inviewport="yes">28</span><span>+</span>
                 </div>
               </div>

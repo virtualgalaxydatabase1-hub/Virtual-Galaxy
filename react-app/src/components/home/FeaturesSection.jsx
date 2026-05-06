@@ -11,57 +11,46 @@ function FeaturesSection() {
       </div>
       <div className="position-relative">
         <div className="container z-5">
-          <div className="features-wrap justify-content-between">
-            <div className="features-col col-left lg-mb-24">
-              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-robot-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Agent-Powered Workflows</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  Turn repetitive tasks into autonomous flows—agents plan, execute, and report with guardrails, audit trails, and clear handoff to humans.
-                </p>
-              </div>
-              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-clipboard-check-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Eval-First Quality</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  Measure accuracy, latency, safety, and cost from day one. Our evals and dashboards keep models reliable and budgets predictable.
-                </p>
-              </div>
-              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-book-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Private Knowledge RAG</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  Make your docs, tickets, and wikis instantly useful with retrieval augmented generation—freshness, citations, and explainability built in.
-                </p>
+          <div className="row g-4 align-items-center">
+            {/* Left Column */}
+            <div className="col-lg-4 d-flex flex-column gap-4">
+              {[
+                { icon: 'robot-solid', title: 'Agent-Powered Workflows', desc: 'Turn repetitive tasks into autonomous flows—agents plan, execute, and report with guardrails.' },
+                { icon: 'clipboard-check-solid', title: 'Eval-First Quality', desc: 'Measure accuracy, latency, safety, and cost from day one. Reliable and predictable.' },
+                { icon: 'book-solid', title: 'Private Knowledge RAG', desc: 'Make your docs, tickets, and wikis instantly useful with retrieval augmented generation.' },
+              ].map((item, i) => (
+                <div key={i} className="features-item effectFade fadeUp">
+                  <div className="product-icon-box">
+                    <i className={`icon icon-${item.icon}`} style={{ fontSize: '24px' }}></i>
+                  </div>
+                  <h6 className="title fw-bold mb-3">{item.title}</h6>
+                  <p className="text-secondary mb-0" style={{ fontSize: '14px' }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            
+            {/* Center Logo */}
+            <div className="col-lg-4 d-flex justify-content-center px-lg-4 my-4 my-lg-0">
+              <div className="center-logo-box effectFade fadeUp">
+                <img src={vgLogo} alt="Virtual Galaxy Logo" style={{ maxWidth: '200px', width: '100%', height: 'auto' }} />
               </div>
             </div>
             
-            <div className="features-center flex-shrink d-flex align-items-center justify-content-center" style={{ background: '#ffff', padding: '40px 30px', borderRadius: '40px', border: '1px solid #27272a', minWidth: '220px' }}>
-              <img src={vgLogo} alt="Virtual Galaxy Logo" style={{ maxWidth: '180px', width: '100%', height: 'auto' }} />
-            </div>
-            
-            <div className="features-col col-right">
-              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-user-check-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Human-Centered AI UX</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  Interfaces, prompts, and error states designed for trust and adoption—so the smart thing is also the obvious thing to do.
-                </p>
-              </div>
-              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-shield-alt-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Secure by Design</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  PII handling, SSO/SAML, RBAC, secrets management, and compliance workflows—ship AI that’s safe, auditable, and enterprise-ready.
-                </p>
-              </div>
-              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
-                <i className="icon icon-plug-solid" style={{ fontSize: '32px' }}></i>
-                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Seamless Integrations</h6>
-                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
-                  Plug into your stack (CRM, helpdesk, ERP, data warehouse) with webhooks and APIs to turn insights into action—fast.
-                </p>
-              </div>
+            {/* Right Column */}
+            <div className="col-lg-4 d-flex flex-column gap-4">
+              {[
+                { icon: 'user-check-solid', title: 'Human-Centered AI UX', desc: 'Interfaces, prompts, and error states designed for trust and adoption—so the smart thing is obvious.' },
+                { icon: 'shield-alt-solid', title: 'Secure by Design', desc: 'PII handling, SSO/SAML, secrets management, and compliance workflows—ship AI that’s safe.' },
+                { icon: 'plug-solid', title: 'Seamless Integrations', desc: 'Plug into your stack (CRM, helpdesk, ERP, data warehouse) with webhooks and APIs.' },
+              ].map((item, i) => (
+                <div key={i} className="features-item effectFade fadeUp">
+                  <div className="product-icon-box">
+                    <i className={`icon icon-${item.icon}`} style={{ fontSize: '24px' }}></i>
+                  </div>
+                  <h6 className="title fw-bold mb-3">{item.title}</h6>
+                  <p className="text-secondary mb-0" style={{ fontSize: '14px' }}>{item.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

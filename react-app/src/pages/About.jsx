@@ -4,7 +4,7 @@ import MissionSection from '../components/about/MissionSection';
 import PartnerSection from '../components/home/PartnerSection';
 import ValuesSection from '../components/about/ValuesSection';
 import ToolsSectionV2 from '../components/about/ToolsSectionV2';
-import TeamSection from '../components/home/TeamSection';
+import AboutTeamSection from '../components/about/AboutTeamSection';
 import StatisticSection from '../components/home/StatisticSection';
 import AwardsSection from '../components/home/AwardsSection';
 import TestimonialsSection from '../components/home/TestimonialsSection';
@@ -29,7 +29,7 @@ function About() {
         <img className="light-top" src="/assets/images/item/light-top.png" alt="" />
         <img className="light-bot" src="/assets/images/item/light-bot.png" alt="" />
         
-        <TeamSection />
+        <AboutTeamSection />
         <StatisticSection />
         <AwardsSection />
         <TestimonialsSection />

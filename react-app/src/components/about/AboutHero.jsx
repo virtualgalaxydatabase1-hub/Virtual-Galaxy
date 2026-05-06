@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import earthImg from '../../assets/earth.png';
+
 
 function AboutHero() {
   return (

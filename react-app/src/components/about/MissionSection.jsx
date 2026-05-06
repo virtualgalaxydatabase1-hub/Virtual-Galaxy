@@ -1,4 +1,5 @@
 import React from 'react';
+import earthImg from '../../assets/earth.png';
 
 function MissionSection() {
   return (
@@ -18,39 +19,29 @@ function MissionSection() {
                   <span className="dot"></span>
                   Available for worldwide project
                 </div>
-                <h5 className="title fw-semibold text-white">Based in <span className="text-brand">Montréal, Canada</span></h5>
+                <h5 className="title fw-semibold text-white">Based in <span className="text-brand">Nagpur & Pune, Maharashtra</span></h5>
                 <a href="/contact" className="tf-btn">
                   Start a Project
                 </a>
               </div>
-              <img className="effectFade fadeRotateX" src="/assets/images/item/earth.png" alt="" />
+              <img className="effectFade fadeRotateX" src={earthImg} alt="Earth" />
             </div>
           </div>
           <div className="col-xxl-5 col-lg-6">
-            <div className="mission-box mb-24">
-              <h4 className="title fw-semibold effectFade fadeUp">Our Mission</h4>
-              <div className="line"></div>
-              <p className="text effectFade fadeUp">
-                Based in Montréal, Canada, we build human-centered AI for production. Our mission is to create intelligent systems that empower people and organizations. By uniting research, design, and engineering, we deliver scalable and reliable AI solutions—technology that’s practical, trustworthy, and designed to make a meaningful impact in the real world.
+            <div className="mission-box mb-24" style={{ background: '#f4f4f5', padding: '30px', borderRadius: '24px' }}>
+              <h4 className="title fw-semibold mb-10" style={{ color: '#ff4d00' }}>Our Mission</h4>
+              <div className="line" style={{ height: '1px', background: '#e4e4e7', margin: '15px 0' }}></div>
+              <p className="text" style={{ color: '#3f3f46', fontSize: '16px', lineHeight: '1.6' }}>
+                To deliver cutting-edge IT solutions that drive operational efficiency, enhance customer experience, and foster business growth. We are committed to providing reliable, tailored technology services that empower organizations to thrive in a fast-evolving digital landscape, while ensuring the highest levels of quality, security, and customer satisfaction.
               </p>
             </div>
-            <div className="box-quotes effectFade fadeRotateX">
-              <div className="image ">
-                <img src="/assets/images/section/quotes-1.jpg" alt="" />
-              </div>
-              <div className="content">
-                <div className="icon mb-8">
-                  <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.9375 20V10.3597C12.9375 7.72182 13.824 5.51559 15.5969 3.74101C17.4177 1.91847 19.8854 0.671463 23 0V6.40288C21.8021 6.78657 21.0115 7.26619 20.6281 7.84173C20.2448 8.3693 20.0292 9.04077 19.9813 9.85612H23V20H12.9375ZM0 20V10.3597C0 7.72182 0.886459 5.51559 2.65938 3.74101C4.48021 1.91847 6.94792 0.671463 10.0625 0V6.40288C8.9125 6.78657 8.12187 7.26619 7.69062 7.84173C7.30729 8.3693 7.09167 9.04077 7.04375 9.85612H10.0625V20H0Z" fill="#E4E4E7"/>
-                  </svg>
-                </div>
-                <div className="text-body-1 fw-semibold desc">Good AI feels obvious—because the hard work is hidden.</div>
-                <div className="cite">
-                  <div className="name text-body-3 fw-semibold">Ava Collins</div>
-                  <div className="line"></div>
-                  <div className="sub text-body-3">Aigocy’s Design Lead</div>
-                </div>
-              </div>
+
+            <div className="mission-box mb-24" style={{ background: '#f4f4f5', padding: '30px', borderRadius: '24px' }}>
+              <h4 className="title fw-semibold mb-10" style={{ color: '#ff4d00' }}>Our Vision</h4>
+              <div className="line" style={{ height: '1px', background: '#e4e4e7', margin: '15px 0' }}></div>
+              <p className="text" style={{ color: '#3f3f46', fontSize: '16px', lineHeight: '1.6' }}>
+                To empower businesses globally with innovative, scalable, and secure IT solutions, transforming the way they operate, and driving digital excellence for a smarter, more connected future.
+              </p>
             </div>
           </div>
         </div>

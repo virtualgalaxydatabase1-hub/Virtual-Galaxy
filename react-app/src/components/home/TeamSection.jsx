@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function TeamSection() {
   return (
-    <div className="section-team flat-spacing">
+    <div className="section-team section-spacing">
       <div className="container">
         <div className="heading-section center mb-64">
           <div className="heading-sub fw-semibold style-1 effectFade fadeUp">Team Members</div>

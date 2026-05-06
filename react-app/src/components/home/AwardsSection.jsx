@@ -2,7 +2,7 @@ import React from 'react';
 
 function AwardsSection() {
   return (
-    <div className="section-awards flat-spacing">
+    <div className="section-awards section-spacing">
       <div className="container">
         <div className="heading-section center mb-48">
           <div className="heading-sub fw-semibold style-1 mb-0 effectFade fadeUp">Awards</div>

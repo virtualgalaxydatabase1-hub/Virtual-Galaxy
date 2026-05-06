@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function ToolsSection() {
   return (
-    <div className="section-tools flat-spacing">
+    <div className="section-tools section-spacing-lg">
       <img className="img-1 img-grow-1" src="/assets/images/item/item-4.svg" alt="" />
       <img className="img-2 img-grow-2" src="/assets/images/item/item-5.svg" alt="" />
       <img className="img-3 img-grow-3" src="/assets/images/item/item-6.svg" alt="" />

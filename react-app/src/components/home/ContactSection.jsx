@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactSection() {
   return (
-    <div id="contact" className="flat-spacing pt-0">
+    <div id="contact" className="section-spacing-lg">
       <div className="section-contact">
         <div className="contact-image">
           <img src="/assets/images/section/contact-image-bg.jpg" alt="" />

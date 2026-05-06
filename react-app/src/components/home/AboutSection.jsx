@@ -4,7 +4,7 @@ import earthImg from '../../assets/earth.png';
 
 function AboutSection() {
   return (
-    <div className="section-about-us flat-spacing" id="about">
+    <div className="section-about-us section-spacing-lg" id="about">
       <div className="container">
         <div className="row">
           <div className="col-12">

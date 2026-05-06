@@ -1,22 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Import local images
+import team1Image from '../../assets/home/ownwer-img/avinash-shende-clear-bg.png';
+import team2Image from '../../assets/home/ownwer-img/sachin-pande-clear-bg.png';
+import logoImage from '../../assets/home/ownwer-img/vg-logo.png';
+
 function TeamSection() {
   return (
     <div className="section-team flat-spacing">
       <div className="container">
         <div className="heading-section center mb-64">
-          <div className="heading-sub fw-semibold style-1 effectFade fadeUp">Team Members</div>
-          <div className="heading-title text-white effectFade fadeRotateX">The Squad Shipping <br /> Your AI</div>
+          <div className="heading-sub fw-semibold style-1 effectFade fadeUp">Our Founder</div>
+          <div className="heading-title text-white effectFade fadeRotateX">
+            The Minds Behind <br /> Virtual-Galaxy
+          </div>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-8 lg-mb-24">
+
+        {/* Precise layout with fixed widths for boxes and gap */}
+        <div className="d-flex justify-content-center align-items-center flex-nowrap" style={{ maxWidth: '1000px', margin: '0 auto', gap: '20px' }}>
+
+          {/* Left Box - Avinash Shende */}
+          <div style={{ flex: '0 0 380px' }}>
             <div className="team-item h-100 effectFade fadeUp">
-              <div className="image">
-                <img src="/assets/images/team/team-1.jpg" alt="" />
+              <div className="image" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '24px', overflow: 'hidden' }}>
+                <img src={team1Image} alt="Avinash Shende" style={{ width: '100%', height: 'auto', display: 'block' }} />
               </div>
-              <a href="#" className="name h6 fw-semibold">Ava Collins</a>
-              <div className="sub text-body-1">Aigocy’s Design Lead</div>
+              <a href="#" className="name h6 fw-semibold">Mr. Avinash Shende</a>
+              <div className="sub text-body-1">Promoter, Chairman, Executive Director & Chief Financial Officer</div>
               <div className="tf-social justify-content-center">
                 <a href="#" className="social-item">
                   <i className="icon icon-twitter-x"></i>
@@ -30,78 +41,36 @@ function TeamSection() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 lg-mb-24">
-            <div className="team-item style-1 mb-24 effectFade fadeUp">
-              <div className="top">
-                <div className="image">
-                  <img src="/assets/images/team/team-2.jpg" alt="" />
-                </div>
-                <div className="tf-social justify-content-center">
-                  <a href="#" className="social-item">
-                    <i className="icon icon-github"></i>
-                  </a>
-                  <a href="#" className="social-item">
-                    <i className="icon icon-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-              <a href="#" className="name text-body-1 fw-semibold">Noah Reed</a>
-              <div className="sub">ML/Agent Lead. Builds domain agents</div>
-            </div>
-            <div className="team-item style-1 effectFade fadeUp">
-              <div className="top">
-                <div className="image">
-                  <img src="/assets/images/team/team-3.jpg" alt="" />
-                </div>
-                <div className="tf-social justify-content-center">
-                  <a href="#" className="social-item">
-                    <i className="icon icon-github"></i>
-                  </a>
-                  <a href="#" className="social-item">
-                    <i className="icon icon-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-              <a href="#" className="name text-body-1 fw-semibold">Lucas Hayes</a>
-              <div className="sub">Solutions Architect. Connects AI to your stack</div>
+
+          {/* Center Logo - Precise Gap */}
+          <div style={{ flex: '0 0 140px' }} className="d-flex justify-content-center effectFade fadeUp">
+            <div className="center-logo-wrap">
+              <img src={logoImage} alt="Logo" className="img-fluid" style={{ maxWidth: '200px' }} />
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="team-item style-1 mb-24 effectFade fadeUp" data-delay="0.1">
-              <div className="top">
-                <div className="image">
-                  <img src="/assets/images/team/team-4.jpg" alt="" />
-                </div>
-                <div className="tf-social justify-content-center">
-                  <a href="#" className="social-item">
-                    <i className="icon icon-github"></i>
-                  </a>
-                  <a href="#" className="social-item">
-                    <i className="icon icon-linkedin-in"></i>
-                  </a>
-                </div>
+
+          {/* Right Box - Sachin Pande */}
+          <div style={{ flex: '0 0 380px' }}>
+            <div className="team-item h-100 effectFade fadeUp">
+              <div className="image" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '24px', overflow: 'hidden' }}>
+                <img src={team2Image} alt="Sachin Pande" style={{ width: '100%', height: 'auto', display: 'block' }} />
               </div>
-              <a href="#" className="name text-body-1 fw-semibold">Jordan Brooks</a>
-              <div className="sub">Data Engineer. Secure access policies</div>
-            </div>
-            <div className="team-item style-1 effectFade fadeUp" data-delay="0.1">
-              <div className="top">
-                <div className="image">
-                  <img src="/assets/images/team/team-5.jpg" alt="" />
-                </div>
-                <div className="tf-social justify-content-center">
-                  <a href="#" className="social-item">
-                    <i className="icon icon-github"></i>
-                  </a>
-                  <a href="#" className="social-item">
-                    <i className="icon icon-linkedin-in"></i>
-                  </a>
-                </div>
+              <a href="#" className="name h6 fw-semibold">Mr. Sachin Pande</a>
+              <div className="sub text-body-1">Promoter, Managing Director & Chief Technology Officer</div>
+              <div className="tf-social justify-content-center">
+                <a href="#" className="social-item">
+                  <i className="icon icon-twitter-x"></i>
+                </a>
+                <a href="#" className="social-item">
+                  <i className="icon icon-linkedin-in"></i>
+                </a>
+                <a href="#" className="social-item">
+                  <i className="icon icon-github"></i>
+                </a>
               </div>
-              <a href="#" className="name text-body-1 fw-semibold">Erin Park</a>
-              <div className="sub">MLOps Engineer. Productionizes with CI/CD</div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

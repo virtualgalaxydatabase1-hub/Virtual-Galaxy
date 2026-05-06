@@ -1,91 +1,89 @@
-import React from 'react';
+import vgLogo from '../../assets/home/ownwer-img/vg-logo-2.png';
 
 function FeaturesSection() {
   return (
-    <div className="section-features section-spacing-grouped">
+    <div className="section-features flat-spacing pt-0">
       <div className="container">
-        <div className="row justify-content-between">
-          <div className="col-xl-5 col-lg-6">
-            <div className="col-left">
-              <div className="heading-section mb-64">
-                <div className="heading-sub fw-semibold effectFade fadeUp">Features Capabilities</div>
-                <div className="heading-title text-gradient-3 effectFade fadeRotateX">Unleash the full <br /> potential of AI</div>
+        <div className="heading-section center mb-64">
+          <div className="heading-sub fw-semibold effectFade fadeUp">Features</div>
+          <div className="heading-title text-gradient-3 effectFade fadeRotateX">All Features in One</div>
+        </div>
+      </div>
+      <div className="position-relative">
+        <div className="container z-5">
+          <div className="features-wrap justify-content-between">
+            <div className="features-col col-left lg-mb-24">
+              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-robot-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Agent-Powered Workflows</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  Turn repetitive tasks into autonomous flows—agents plan, execute, and report with guardrails, audit trails, and clear handoff to humans.
+                </p>
               </div>
-              <div className="features-list">
-                <div className="list-item flex-wrap effectFade fadeUp">
-                  <div className="d-flex gap-8 align-items-center">
-                    <i className="icon icon-clipboard-list-check-solid fs-20"></i>
-                    <h6 className="fw-semibold name">Audit & Evals</h6>
-                  </div>
-                  <p className="text fs-18 fw-semibold">Monitor outputs, catch drift, and trace reasoning in a single dashboard.</p>
-                </div>
-                <div className="list-item flex-wrap effectFade fadeUp">
-                  <div className="d-flex gap-8 align-items-center">
-                    <i className="icon icon-puzzle-piece-solid fs-20"></i>
-                    <h6 className="fw-semibold name">Easy Integrations</h6>
-                  </div>
-                  <p className="text fs-18 fw-semibold">Native connectors for Slack, Zendesk, Salesforce, Postgres, and 40+ more.</p>
-                </div>
-                <div className="list-item flex-wrap effectFade fadeUp">
-                  <div className="d-flex gap-8 align-items-center">
-                    <i className="icon icon-users-solid fs-20"></i>
-                    <h6 className="fw-semibold name">Access Controls</h6>
-                  </div>
-                  <p className="text fs-18 fw-semibold">Role-based permissions (RBAC) ensure users only see the data they're allowed to.</p>
-                </div>
+              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-clipboard-check-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Eval-First Quality</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  Measure accuracy, latency, safety, and cost from day one. Our evals and dashboards keep models reliable and budgets predictable.
+                </p>
+              </div>
+              <div className="features-item effectFade fadeUp" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-book-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Private Knowledge RAG</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  Make your docs, tickets, and wikis instantly useful with retrieval augmented generation—freshness, citations, and explainability built in.
+                </p>
+              </div>
+            </div>
+            
+            <div className="features-center flex-shrink d-flex align-items-center justify-content-center" style={{ background: '#ffff', padding: '40px 30px', borderRadius: '40px', border: '1px solid #27272a', minWidth: '220px' }}>
+              <img src={vgLogo} alt="Virtual Galaxy Logo" style={{ maxWidth: '180px', width: '100%', height: 'auto' }} />
+            </div>
+            
+            <div className="features-col col-right">
+              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-user-check-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Human-Centered AI UX</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  Interfaces, prompts, and error states designed for trust and adoption—so the smart thing is also the obvious thing to do.
+                </p>
+              </div>
+              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-shield-alt-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Secure by Design</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  PII handling, SSO/SAML, RBAC, secrets management, and compliance workflows—ship AI that’s safe, auditable, and enterprise-ready.
+                </p>
+              </div>
+              <div className="features-item effectFade fadeUp" data-delay="0.1" style={{ padding: '24px 20px', marginBottom: '20px' }}>
+                <i className="icon icon-plug-solid" style={{ fontSize: '32px' }}></i>
+                <h6 className="title fw-semibold" style={{ fontSize: '18px', marginTop: '15px' }}>Seamless Integrations</h6>
+                <p className="text-secondary" style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                  Plug into your stack (CRM, helpdesk, ERP, data warehouse) with webhooks and APIs to turn insights into action—fast.
+                </p>
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
-            <div className="col-right">
-              <div className="image bg-features border-outline effectFade fadeRotateX">
-                <img src="/assets/images/section/features-1.jpg" alt="" />
-                <div className="card-box-1 border-outline effectFade fadeUp" data-delay="0.1">
-                  <i className="icon icon-bolt-solid fs-20 text-brand"></i>
-                  <h6 className="fw-semibold">10x Speed</h6>
-                  <div className="text-body-3 fw-semibold">Automate workflows <br /> instantly.</div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-6">
-                  <div className="bg-features border-outline py-40 border-radius-24 mt-20 effectFade fadeUp">
-                    <h3 className="heading fw-semibold">Integration</h3>
-                    <p className="fs-18">Ready to sync with your tools.</p>
-                    <div className="list-tech mt-20 d-flex gap-16 justify-content-center">
-                      <div className="tech-item style-circle">
-                        <img src="/assets/images/partner/partner-active-1.svg" alt="" />
-                      </div>
-                      <div className="tech-item style-circle">
-                        <img src="/assets/images/partner/partner-active-2.svg" alt="" />
-                      </div>
-                      <div className="tech-item style-circle">
-                        <img src="/assets/images/partner/partner-active-3.svg" alt="" />
-                      </div>
+        </div>
+        
+        <div className="side-line-main d-none d-lg-block wow fadeIn">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 mx-auto">
+                <div className="side-line-wrap">
+                  <div className="link-break-line left">
+                    <div className="link-break-line">
+                      <span className="item top"></span>
+                      <span className="item bottom"></span>
                     </div>
                   </div>
-                </div>
-                <div className="col-sm-6">
-                  <div className="bg-features border-outline py-40 border-radius-24 mt-20 effectFade fadeUp" data-delay="0.1">
-                    <h3 className="heading fw-semibold">Access</h3>
-                    <p className="fs-18">Granular permissions built in.</p>
-                    <div className="col-lg-4 mx-auto">
-                      <div className="side-line-wrap">
-                        <div className="link-break-line left">
-                          <div className="link-break-line">
-                            <span className="item top"></span>
-                            <span className="item bottom"></span>
-                          </div>
-                        </div>
-                        <div className="link-break-center">
-                          <span className="simu-electric left"></span>
-                          <span className="simu-electric right"></span>
-                        </div>
-                        <div className="link-break-line right">
-                          <span className="item top"></span>
-                          <span className="item bottom"></span>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="link-break-center">
+                    <span className="simu-electric left"></span>
+                    <span className="simu-electric right"></span>
+                  </div>
+                  <div className="link-break-line right">
+                    <span className="item top"></span>
+                    <span className="item bottom"></span>
                   </div>
                 </div>
               </div>

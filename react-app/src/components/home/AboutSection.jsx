@@ -21,7 +21,7 @@ function AboutSection() {
                   <span className="dot"></span>
                   Available for worldwide project
                 </div>
-                <h5 className="title fw-semibold text-white">Based in <span className="text-brand">Nagpur , Maharashtra</span></h5>
+                <h5 className="title fw-semibold text-white">Based in <span className="text-brand">Nagpur & Pune , Maharashtra</span></h5>
                 <Link to="/contact" className="tf-btn">
                   Start a Project
                 </Link>

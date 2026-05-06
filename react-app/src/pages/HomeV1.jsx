@@ -30,7 +30,6 @@ function HomeV1() {
         <WhyChooseUs />
         <WorksSection />
         <ProcessSection />
-        <BenefitsSection />
         <FeaturesSection />
       </div>
 
